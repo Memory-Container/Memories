@@ -1,5 +1,5 @@
 //See the order of Tab in Navigation
-let Current_Tab = 5,
+let Current_Tab = 1,
     Current_Slide = [0,1,1,1,1,1,1,1,1],
     Available_Slide = [0,1,2,5,3,10,10,2,1],
     AnimationInProgress = false,

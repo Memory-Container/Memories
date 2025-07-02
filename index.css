@@ -14,7 +14,7 @@ body {
     font-family: 'Courier New';
     background-color: rgb(8, 8, 8);
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(6, 209, 245, 0) 25%,var(--gradient-color) 120%), url("/Art/sky.png");
+    background-image: linear-gradient(rgba(6, 209, 245, 0) 25%,var(--gradient-color) 120%), url("Art/sky.png");
     background-attachment: fixed;
     background-size: cover;
     z-index: 1;
@@ -92,7 +92,7 @@ input, select, textarea, button {
     transition: 0.5s;
 }
 .Navigation-Container {
-    background-image: url("/Art/Navigation-Gradient.png");
+    background-image: url("Art/Navigation-Gradient.png");
     background-position: 100% 0px;
     background-size: cover;
     border: none;
@@ -141,7 +141,7 @@ input, select, textarea, button {
     border: 2px solid white;
     border-radius: 5px;
     color: white;
-    background-image: url("/Art/Star-Pattern.png"), linear-gradient(rgba(0, 0, 0, 0.63) 10%, rgba(0, 93, 136, 0.822) 50%, rgba(84, 166, 199, 0.795));
+    background-image: url("Art/Star-Pattern.png"), linear-gradient(rgba(0, 0, 0, 0.63) 10%, rgba(0, 93, 136, 0.822) 50%, rgba(84, 166, 199, 0.795));
 }
 .Grid {
     text-align: center;

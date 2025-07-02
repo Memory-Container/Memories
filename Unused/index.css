@@ -1,0 +1,266 @@
+html {
+    height: 100%;
+    color: white;    
+    z-index: 0;
+}
+body {
+    color: white;   
+    font-family: 'Courier New';
+    background-color: rgb(8, 8, 8);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(95, 95, 95) -5%, rgb(8, 8, 8) 75%);
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+}
+.b {
+    position: relative;
+    top: -5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.show {
+    animation: fade 0.5s;
+    opacity: 1;
+    transition: 0.5s;
+}
+.container {
+    border: 3px solid transparent;
+    opacity: 0;
+    transition: 0.5s;
+    animation: fade 0.5s reverse;
+}
+.e {
+    margin-bottom: 90px;
+    height: 100%;
+}
+.Grid-E {
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 5% 0%;
+    font-weight: bold;
+    font-family: 'Courier New';
+    text-align: center;
+    border: 1px solid rgb(175, 175, 175);
+    -ms-grid-row-span: auto;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New';
+    background-color: rgba(34, 34, 34, 0.527);
+    -ms-grid-row-span: auto;
+    transition: 0.5s;
+}
+.Grid-E:hover {
+    z-index: 999;
+    background-color: rgba(255,255,255, 0.26);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.glow {
+    opacity: 1;
+    transition: 0.5s;
+    text-shadow: 0px 0px 12px rgb(77, 135, 243);
+    color: rgb(168, 199, 255);
+    z-index: 999;
+    background-color: rgba(77, 135, 243, 0.26);
+    box-shadow: 0px 0px 10px rgb(77, 135, 243);
+}
+.glow:hover {
+    transition: 0.5s;
+    text-shadow: 0px 0px 12px rgb(77, 135, 243);
+    color: rgb(214, 228, 255);
+    z-index: 999;
+    background-color: rgba(77, 135, 243, 0.26);
+    box-shadow: 0px 0px 10px rgb(77, 135, 243);
+}
+.grid {
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+.Grid {
+    z-index: 99;
+    position: fixed;
+    width: 99.5%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.Main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    text-align: center;
+    font-family: 'Courier New';
+}
+.info {
+    position: relative; top: -20px;
+    font-size: 13px;
+    color: rgb(175, 175, 175);
+    text-align: center;
+    font-family: 'Courier New';
+}
+.shadow {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 12px white;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: solid 1px;
+    border-image: linear-gradient(to right, transparent, white, transparent) 1;
+}
+.shadow-gold {
+    color: rgb(236, 236, 39);
+    text-shadow: 0px 0px 10px yellow;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: solid 1px;
+    border-image: linear-gradient(to right, transparent, yellow, transparent) 1;
+}
+.shadow-blue {
+    color: rgb(134, 176, 255);
+    text-shadow: 0px 0px 10px rgb(77, 135, 243);
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: solid 1px;
+    border-image: linear-gradient(to right, transparent, rgb(134, 176, 255), transparent) 1;
+}
+.blue1 {
+    border: rgb(164, 219, 255) 3px solid;
+    transition: 0.25s;
+}
+.no-bg {
+    text-shadow: 0px 0px 12px rgb(77, 135, 243);
+    color: rgb(134, 176, 255);
+    z-index: 999;
+}
+.left {
+    border-left: 0px;
+}
+.right {
+    border-right: 0px;
+}
+.Header {
+    text-shadow: 0px 0px 10px white;
+    margin-bottom: 5px;
+    line-height: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 3px;
+    border-bottom: solid 2px;
+    border-image: linear-gradient(to right, transparent, white, transparent) 1;
+}
+img {
+    border: 3px solid;
+    transition: 0.25s;
+}
+img.smooth {
+    border-radius: 5px;
+}
+.abs {
+    position: absolute;
+}
+video {
+    border: 3px solid;
+    transition: 0.5s;
+}
+video:hover {
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+img:hover {
+    transform: rotate(0deg);
+}
+.r3 {
+    transform: rotate(3deg);
+}
+.r-3 {
+    transform: rotate(-3deg);
+}
+.r5 {
+    transform: rotate(5deg);
+}
+.r-5 {
+    transform: rotate(-5deg);
+}
+.r7 {
+    transform: rotate(7deg);
+}
+.r-7 {
+    transform: rotate(-7deg);
+}
+.r10 {
+    transform: rotate(10deg);
+}
+.r-10 {
+    transform: rotate(-10deg);
+}
+@keyframes fade {
+   0% {
+    opacity: 1;
+   } 
+   100% {
+    opacity: 0;
+   }
+}
+.button {
+    padding: 1% 1%;
+    font-weight: bold;
+    font-family: 'Courier New';
+    text-align: center;
+    border: 1px solid rgb(175, 175, 175);
+    color: white;
+    background-color: rgba(34, 34, 34, 0.527);
+    transition: 0.5s;
+}
+.bsettings {
+    height: 25px;
+    width: 250px;
+}
+.settings {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-image: url('settings.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+.settings:hover {
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+.settings-imgs {
+    background-image: url('settings.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.Modal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+    color: black;
+    z-index: 899;
+}
+.MBody {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.MHeader {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.golden {
+    color: rgb(236, 236, 39);
+    text-shadow: 0px 0px 10px yellow;
+}

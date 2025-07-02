@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="Navigation-Bar">
+            <div class="Navigation-Container" onclick="SwitchTab(1)">
+                <span class="Navigation-Text">Home</span>
+            </div>
+            <div class="Navigation-Container" onclick="SwitchTab(2)">
+                <span class="Navigation-Text">10A6 (2022 - 2023)</span>
+            </div>
+            <div class="Navigation-Container" onclick="SwitchTab(3)">
+                <span class="Navigation-Text">11A6 (2023 - 2024)</span>
+            </div>
+            <div class="Navigation-Container" onclick="SwitchTab(4)">
+                <span class="Navigation-Text">12A6 (2024 - 2025)</span>
+            </div>
+            <div class="Navigation-Container" onclick="SwitchTab(5)">
+                <span class="Navigation-Text">Đà Lạt 12</span>
+            </div>
+            <div class="Navigation-Container" onclick="SwitchTab(6)">
+                <span class="Navigation-Text">Kỷ yếu</span>
+            </div>
+            <div class="Navigation-Container" onclick="SwitchTab(7)">
+                <span class="Navigation-Text">Credits/Honorable Mentions</span>
+            </div>
+            <div class="Navigation-Container" onclick="SwitchTab(8)">
+                <span class="Navigation-Text">???</span>
+            </div>
+        </div>
+        <button class="Navigation-Switch" onclick="NavigationSwitch()">
+            &#x2630
+        </button>
+    </div>
+    <div id="1" style="display: none; opacity: 0;">
+        <div class="Home-Container" >
+            <div class="Shadow-Text All-Fade" style="--background: #838400; --border: #ccce00;--color: #ffffc6 ;color: #feff6f">
+                Ký ức cho một thời huy hoàng
+            </div>
+            <span>
+                <b>05/09/2022</b> - <b>23/06/2025</b>
+                <div style="display: flex; justify-content: space-evenly; width: 100%; height: 22rem;">
+                    <img id="Rotate" src="DALAT/NGAY1/null.png" style="transform: rotate(0deg); opacity: 1; transition: 1s;" width="70%">
+                    <img id="Buffer" src="" style="transform: rotate(0deg);display: none; opacity: 0; transition: 1.5s;" width="70%">
+                </div>
+            </span>
+        </div>
+        <img style="transform: rotate(-10deg); top: 57%; left: 6%" src="10A6/10A6-FM.jpg" width="25%">
+        <img style="transform: rotate(-8deg); top: 7%; right: 5%" src="10A6/10A6-BKD.jpg" width="23%">
+        <img style="transform: rotate(7deg); left: 5%; top: 5%" src="11A6/11A6-KKK.jpg" width="15%">
+        <img style="transform: rotate(3deg); top: 50%; right: 05%" src="11A6/11A6-HXX.jpg" width="25%">
+        <img style="transform: rotate(5deg); top: 80%; right: 33%" src="KYYEU/CAYDAN3.jpg" width="15%">
+        <img style="transform: rotate(-3deg); top: 78%; left: 33%" src="KYYEU/Weird.jpg" width="15%">
+    </div>
+    <div id="2" style="display: none; opacity: 0;">
+        <div class="Arrow-Right" onclick='SwitchSlide(2, "+")'>
+            &#9658;
+        </div>
+        <div class="Arrow-Left" onclick='SwitchSlide(2, "-")'>
+            &#9658;
+        </div>
+        <div>
+            <div id="21" class="Home-Container" style="top: 15%;left: 50%; transition: 0.70s;">
+                <div class="Shadow-Text All-Fade" style="--background: #8b8b8b; --border: #e6e6e6; color: #ffffff">
+                    Khởi đầu cho một hành trình đầy kỷ niệm
+                </div>
+                <span>
+                    <b>05/09/2022</b> - <b>25/05/2023</b>
+                    <div class="Image-Container">
+                        <img src="10A6/10A6-9-5.jpg" width="70%" class="Image">
+                        <div>
+                            Ngày mới tới lớp, xa lạ không quen thuộc
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div id="22" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Xin lỗi mọi người vì ở đây không có nhiều ảnh<br>
+                    Bị mất điện thoại hồi Tết 2024 nên ảnh lớp 10 là giờ không còn cái nào<br>
+                    Có thì gửi thêm nha!
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="10A6/10A6-FM.jpg" width="85%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                        <div>Flashmob (Nhìn vl quá)</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="10A6/10A6-KG.jpg" width="85%" style="position: inherit; rotate: 4deg; margin-bottom: 10px;">
+                        <div>Mở đầu cho 3 năm :)))</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="10A6/10A6-KC.jpg" width="75%" style="position: inherit; rotate: -5deg; margin-bottom: 10px;">
+                        <div>Kéo co nhưng thua</div>
+                    </div>
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="10A6/10A6-HX.jpg" width="35%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                        <div>Này hội xuân nè</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="10A6/10A6-BKD.jpg" width="85%" style="position: inherit; rotate: -5deg; margin-bottom: 25px;">
+                        <div>Vừa vô đã báo :))</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="10A6/10A6-9-5.jpg" width="75%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                        <div>Lần đầu gặp nhau</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="3" style="display: none; opacity: 0;">
+        <div class="Arrow-Right" onclick='SwitchSlide(3, "+")'>
+            &#9658;
+        </div>
+        <div class="Arrow-Left" onclick='SwitchSlide(3, "-")'>
+            &#9658;
+        </div>
+        <div>
+            <div id="31" class="Home-Container" style="top: 15%;left: 50%; transition: 0.70s;">
+                <div class="Shadow-Text All-Fade" style="--background: #519c7d; --border: #82ffcb;--color: #82ffcb; color: #3dffae">
+                    Một nửa chặn đường
+                </div>
+                <span>
+                    <b>05/09/2023</b> - <b>19/05/2023</b>
+                    <div class="Image-Container">
+                        <img src="11A6/11A6.jpg" width="70%" class="Image">
+                        <div>
+                            Qua đi bao nhiêu vui buồn nào ai hay?
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div id="32" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Mỹ An nói đúng nhở<br>
+                    Ảnh bản thân tuy không có nhiều nhưng ảnh lớp có bao nhiêu là giữ hết
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6.jpg" width="75%" style="position: inherit; rotate: -4deg; margin-bottom: 15px;">
+                        <div>Cái này cho vụ gì ấy nhở?</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-FM.jpg" width="75%" style="position: inherit; rotate: 5deg; margin-bottom: 15px;">
+                        <div>Lần này vui hơn lần trước</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-KC-4.jpg" width="55%" style="position: inherit; rotate: 5deg; margin-bottom: 15px;">
+                        <div>Luyện kéo co các kiểu</div>
+                    </div>
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-20-11-2.jpg" width="35%" style="position: inherit; rotate: 5deg; margin-bottom: 10px;">
+                        <div>Ở lại tới 7h tối để nhảy 20/11</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-HXX.jpg" width="85%" style="position: inherit; rotate: -3deg; margin-bottom: 25px;">
+                        <div>Hội xuân lần 2</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-HX-4.jpg" width="45%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                        <div>Lúc đó hơi bực vì bị giam ở trường</div>
+                    </div>
+                </div>
+            </div>
+            <div id="33" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Nhiều đứa bảo năm 11 vui các thứ, muốn quay lại bla.. bla<br>
+                    Ai chứ quay lại luôn cấp 2 cho nó nhanh gọn lẹ
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-TP.jpg" width="33%" style="position: inherit; rotate: -4deg; margin-bottom: 10px;">
+                        <div>Sao quên thầy Phan được chứ</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-KCT.jpg" width="75%" style="position: inherit; rotate: 5deg; margin-bottom: 25px;">
+                        <div>Cuối cùng cũng thắng! Giải nhất luôn</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-KKK.jpg" width="40%" style="position: inherit; rotate: 5deg; margin-bottom: 10px;">
+                        <div>Khắc chế cứng của Anh Đức</div>
+                    </div>
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-EC.jpg" width="75%" style="position: inherit; rotate: 5deg; margin-bottom: 15px;">
+                        <div>Đức beatbox vô cái mic :))</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-DB.jpg" width="45%" style="position: inherit; rotate: -3deg; margin-bottom: 25px;">
+                        <div>Đá banh! Có mèo ở sân banh :)</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-TPD.jpg" width="75%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                        <div>Tạm biết thầy Phan!</div>
+                    </div>
+                </div>
+            </div>
+            <div id="34" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Chả biết ghi gì ở đây nữa...
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-LM.jpg" width="50%" style="position: inherit; margin-bottom: 10px;">
+                        <div>Người gác cổng TATC</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-LM-2.jpg" width="40%" style="position: inherit; margin-bottom: 10px;">
+                        <div>Người gác cổng Anh Văn</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-LM-2-3.jpg" width="45%" style="position: inherit; margin-bottom: 10px;">
+                        <div>Người gác cổng Vật Lý</div>
+                    </div>
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-CN.jpg" width="75%" style="position: inherit; rotate: 5deg; margin-bottom: 15px;">
+                        <div>Cuối năm qua Lanu ăn</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-ANHDUC.jpg" width="45%" style="position: inherit; rotate: -3deg; margin-bottom: 25px;">
+                        <div>Đủ hiểu rồi ha</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-NHATMINH.jpg" width="40%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                        <div>Nhìn có hài không :))))</div>
+                    </div>
+                </div>
+            </div>
+            <div id="35" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Hài nhất để cuối nó mới vui :))))
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center;">
+                    <div class="Image-Grid-Container">
+                        <img src="11A6/11A6-CLGT.jpg" width="19.5%" style="position: inherit; margin-bottom: 10px;">
+                        <div>Nói gì ở đây giờ...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="4" style="display: none; opacity: 0;">
+        <div class="Arrow-Right" onclick='SwitchSlide(4, "+")'>
+            &#9658;
+        </div>
+        <div class="Arrow-Left" onclick='SwitchSlide(4, "-")'>
+            &#9658;
+        </div>
+        <div>
+            <div id="41" class="Home-Container" style="top: 15%;left: 50%; transition: 0.70s;">
+                <div class="Shadow-Text All-Fade" style="--background: #963f17; --border: #E45E22;--color: #FF0000  ; color: #FF0000">
+                    Kết thúc cho một thời học sinh
+                </div>
+                <span>
+                    <b>05/09/2024</b> - <b>23/06/2023</b>
+                    <div class="Image-Container">
+                        <img src="12A6/12A6-TAMBIET-2.jpg" width="150%" class="Image">
+                        <div>
+                            Nước mắt đừng tuôn trào khi xung quanh bạn luôn có tôi
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div id="42" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    !
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-BD.jpg" width="65%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                        <div>Sinh nhật cô Ngọc thì phải</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-DOOR.jpg" width="45%" style="position: inherit; rotate: -4deg; margin-bottom: 10px;">
+                        <div>Bị khóa ở ngoài (lần 2)</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-NL.jpg" width="45%" style="position: inherit; rotate: 5deg; margin-bottom: 15px;">
+                        <div>Minh giúp nón lá :))</div>
+                    </div>
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-20-11.jpg" width="80%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                        <div>20/11</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-HX-2.jpg" width="45%" style="position: inherit; rotate: 2deg; margin-bottom: 15px;">
+                        <div>đôm đốm P07</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-HX.jpg" width="75%" style="position: inherit; rotate: -5deg; margin-bottom: 10px;">
+                        <div>Mua cả đống xong ngồi ăn thấy mẹ luôn</div>
+                    </div>
+                </div>
+            </div>
+            <div id="43" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    ?
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-GIOTO.jpg" width="75%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                        <div>Giỗ tổ Hùng Vương này</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-MISC-2.jpg" width="75%" style="position: inherit; rotate: 4deg; margin-bottom: 13  px;">
+                        <div>Một khoảnh khắc nhỏ lúc ra về</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-TD.jpg" width="75%" style="position: inherit; rotate: -5deg; margin-bottom: 15px;">
+                        <div>Bình yên, nó nên như này</div>
+                    </div>
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-MISC.jpg" width="80%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                        <div>Định chụp như này mỗi này nhưng lười quá</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="12A6/12A6-TAMBIET.jpg" width="95%" style="position: inherit; rotate: 2deg; margin-bottom: 15px;">
+                        <div>Ý tưởng của tôi, tự hào về cái này</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <video src="12A6/12A6-BD-2.mp4" controls width="75%" style="position: inherit; rotate: -5deg; margin-bottom: 25px;"></video>
+                        <div>Cái gì đây trời :))))</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="5" style="display: contents; opacity: 1;">
+        <div class="Arrow-Right" onclick='SwitchSlide(5, "+")'>
+            &#9658;
+        </div>
+        <div class="Arrow-Left" onclick='SwitchSlide(5, "-")'>
+            &#9658;
+        </div>
+        <div>
+            <div class="Home-Container" id="51" style="top: 15%;left: 50%; transition: 0.70s;" >
+                <div class="Shadow-Text All-Fade" style="--background: #698a4b; --border: #b4ff5f;--color: #c5ff3d  ; color: #bcff96">
+                    Nơi gắn kết những con người
+                </div>
+                <span>
+                    <b>3 ngày</b> - <b>2 đêm</b>
+                    <div class="Image-Container">
+                        <img src="DALAT/NGAY1/PET-1.png" width="70%" class="Image">
+                        <div>
+                            Chó, niềm vui của cuộc đời tôi.
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div id="52" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Đêm 1 (Nơi bắt đầu của mọi thứ)
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%; margin-bottom: 25px;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM1/1.png" width="75%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM1/2.png" width="45%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM1/3.png" width="75%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <video src="DALAT/DEM1/4.mp4" controls width="85%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;"></video>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <video src="DALAT/DEM1/5.mp4" controls width="35%" style="position: inherit; rotate: -1deg; margin-bottom: 10px;"></video>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM1/6.jpg" width="45%" style="position: inherit; rotate: 1deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div id="53" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Ngày 1 (1/2)
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/GOAT-4.png" width="45%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/DOG.png" width="45%" style="position: inherit; rotate: 4deg; margin-bottom: 10px;">
+                        <div>Không biết giờ nó ra sao nhỉ</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/KKK.png" width="45%" style="position: inherit; rotate: -5deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/Blue-Flower.png" width="45%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/H-1.png" width="45%" style="position: inherit; rotate: -5deg; margin-bottom: 25px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/AL-2.png" width="45%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div id="54" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Ngày 1 (2/2)
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/PARK-1.png" width="75%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/PET-2.png" width="50%" style="position: inherit; rotate: 4deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/GOAT-3.png" width="50%" style="position: inherit; rotate: -5deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/null.png" width="75%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/BNUUY.png" width="75%" style="position: inherit; rotate: -1deg; margin-bottom: 25px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY1/FLOWER-1.png" width="45%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div id="55" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Đêm 2
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 50% 50%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM2/FUN-1.png" width="55%" style="position: inherit; rotate: 0deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM2/FUN-2.png" width="30%" style="position: inherit; rotate: 0deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 50% 50%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM2/SKY-1.png" width="55%" style="position: inherit; rotate: 0deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM2/SKY-2.png" width="55%" style="position: inherit; rotate: 0deg; margin-bottom: 25px;">
+                    </div>
+                </div>
+            </div>
+            <div id="56" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Ngày 2 (1/2)
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/C-VAR-1.png" width="45%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                        <div>Corgi Variant 1</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/C-VAR-2.png" width="45%" style="position: inherit; rotate: 4deg; margin-bottom: 10px;">
+                        <div>Corgi Variant 2</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/C-VAR-3.png" width="45%" style="position: inherit; rotate: -5deg; margin-bottom: 10px;">
+                        <div>Corgi Variant 3</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/C-VAR-4.png" width="75%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                        <div>Corgi Variant 4</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/CAPYBARA.png" width="75%" style="position: inherit; rotate: -5deg; margin-bottom: 25px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/RACOON.jpg" width="45%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div id="57" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Ngày 2 (2/2)
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/IDK-2.jpg" width="75%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/DOGP.png" width="75%" style="position: inherit; rotate: -4deg; margin-bottom: 10px;">      
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/IMG20241230133457.jpg" width="75%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/IDK.png" width="75%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/D-6.png" width="45%" style="position: inherit; rotate: 5deg; margin-bottom: 25px;">
+                        <div>Heh nhìn hài nhở</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY2/PIG.png" width="75%" style="position: inherit; rotate: 4deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div id="58" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Đêm 3 (1/2)
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <video controls src="DALAT/DEM3/SINHNHAT.mp4" width="85%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;"></video>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/Gala1.png" width="75%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/Gala2.png" width="85%" style="position: inherit; rotate: 1deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/Gala3.png" width="85%" style="position: inherit; rotate: 1deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/BANAN.png" width="50%" style="position: inherit; rotate: -5deg; margin-bottom: 25px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/TAPTHE.png" width="85%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div id="59" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Đêm 3 (2/2)
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%; margin-bottom: 7%; margin-top: 2%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/Gala-B.png" width="85%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/Gala-G.png" width="85%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/Gala-T.png" width="85%" style="position: inherit; rotate: 1deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/HAT-B.png" width="85%" style="position: inherit; rotate: 1deg; margin-bottom: 10px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/HAT-G.png" width="85%" style="position: inherit; rotate: -5deg; margin-bottom: 25px;">
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/DEM3/HAT-Y.png" width="85%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div id="60" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Ngày 3 (Lúc kết thúc của cuộc vui)
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33.33% 33.33% 33.33%; margin-top: 5%;">
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY3/HOTEL.png" width="85%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                        <div>Những khoảnh khắc</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY3/FLOW-1.png" width="75%" style="position: inherit; rotate: 1deg; margin-bottom: 10px;">
+                        <div>Thay đổi cuộc sống</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="DALAT/NGAY3/FLOW-2.png" width="85%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                        <div>Như tầm thường qua những bức ảnh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="6" style="display: none; opacity: 0;">
+        <div class="Arrow-Right" onclick='SwitchSlide(6, "+")'>
+            &#9658;
+        </div>
+        <div class="Arrow-Left" onclick='SwitchSlide(6, "-")'>
+            &#9658;
+        </div>
+        <div>
+            <div id="61" class="Home-Container" style="top: 15%;left: 50%; transition: 0.70s;">
+                <div class="Shadow-Text All-Fade" style="--background: #4419a8; --border: #5b2eff;--color: hsl(258, 100%, 71%)  ; color: #9f76ffad">
+                    Qua những tấm ảnh
+                </div>
+                <span>
+                    <b>XX/XX/20XX</b> - <b>XX/XX/20XX</b>
+                    <div class="Image-Container">
+                        <img src="KYYEU/TAPTHE.jpg" width="75%" class="Image">
+                        <div>
+                            Tuy nhỏ bé, nhưng chứa bao nhiêu cuộc đời
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div id="62" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Khi đã đến đích rồi... Ta còn lại gì?
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%; margin-bottom: 5%;">
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/10NAM.jpg" width="85%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                        <div>Quý ông bảnh bao</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/TAPTHE.jpg" width="85%" style="position: inherit; rotate: -1deg; margin-bottom: 10px;">
+                        <div>Nắng, nóng, nhưng có ảnh là được</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/Weird.jpg" width="85%" style="position: inherit; rotate: 1deg; margin-bottom: 15px;">
+                        <div>Cái gì đây trời</div>
+                    </div>
+                </div>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/CAYDAN1.jpg" width="85%" style="position: inherit; rotate: 3deg; margin-bottom: 10px;">
+                        <div>Là sao nhở</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/CAYDAN2.jpg" width="85%" style="position: inherit; rotate: -5deg; margin-bottom: 15px;">
+                        <div>Mùa 8 của một cuộc tình</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/CAYDAN3.jpg" width="85%" style="position: inherit; rotate: -2deg; margin-bottom: 10px;">
+                        <div>Chán Minh Quang thiệt á</div>
+                    </div>
+                </div>
+            </div>
+            <div id="63" style="position: absolute; left: 150%; transition: 0.70s; width: 100%; text-align: center; transform: translateX(-50%)">
+                <div>
+                    Khi đã xa nhau rồi... Liệu ai còn nhớ ai?
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/DUCVANHAN.jpg" width="75%" style="position: inherit; rotate: 2deg; margin-bottom: 10px;">
+                        <div>Đức và Nhân</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/TAPTHE.png" width="40%" style="position: inherit; rotate: 4deg; margin-bottom: 17px;">
+                        <div>Hiếu và Mọi người</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/DUVADAN.jpg" width="75%" style="position: inherit; rotate: -3deg; margin-bottom: 15px;">
+                        <div>Du và Đan</div>
+                    </div>
+                </div>
+                <br>
+                <div class="Image-Grid" style="display: grid; align-items: center; grid-template-columns: 33% 33% 33%;">
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/TRIAN.png" width="70%" style="position: inherit; rotate: -3deg; margin-bottom: 10px;">
+                        <div>........</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/TRIAN1.png" width="75%" style="position: inherit; rotate: 2deg; margin-bottom: 15px;">
+                        <div>Chuẩn bị cho tri ân</div>
+                    </div>
+                    <div class="Image-Grid-Container">
+                        <img src="KYYEU/TRIAN2.png" width="75%" style="position: inherit; rotate: -2deg; margin-bottom: 25px;">
+                        <div>Xếp quà cho giáo viên</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="7" style="display: none; opacity: 0;">
+        <div class="Arrow-Right" onclick='SwitchSlide(7, "+")'>
+            &#9658;
+        </div>
+        <div class="Arrow-Left" onclick='SwitchSlide(7, "-")'>
+            &#9658;
+        </div>
+        <div>
+            <div id="71" class="Home-Container" style="width: 80%;top: 6%;left: 50%; transition: 0.70s; height: 90%;">
+                <div class="Shadow-Text All-Fade" style="--background: #00779b; --border: #7de1ff;--color: #68dcff; color: #6fcaff">
+                    Cảm ơn các bạn vì đã tham gia hành trình này
+                </div>
+                <div class="Credit-Containter">
+                    <div class="Grid">
+                        <span>
+                            Ngọc Ánh
+                        </span>
+                        <span>
+                            Mai Hân
+                        </span>
+                        <span>
+                            Gia Hân
+                        </span>
+                        <span>
+                            Ngọc Hân
+                        </span>
+                        <span>
+                            Dung Nghi
+                        </span>
+                        <span>
+                            Thanh Nhi
+                        </span>
+                        <span>
+                            Khánh Vy
+                        </span>
+                        <span>
+                            Thùy Anh
+                        </span>
+                        <span>
+                            Đ.Quỳnh Như
+                        </span>
+                        <span>
+                            N.P.Quỳnh Như
+                        </span>
+                        <span>
+                            T.H.Quỳnh Anh
+                        </span> 
+                        <span>
+                            Quỳnh Đan
+                        </span> 
+                        <span>
+                            Anh Đào
+                        </span>
+                        <span>
+                            Vân Khánh
+                        </span> 
+                        <span>
+                            Khánh Ngân
+                        </span> 
+                        <span>
+                            Mỹ An
+                        </span> 
+                        <span>
+                            Phương An
+                        </span>
+                        <span>
+                            Cát Du
+                        </span> 
+                        <span>
+                            Hoàng Mỹ
+                        </span> 
+                        <span>
+                            Kim Ngân
+                        </span> 
+                        <span>
+                            Khánh Ngọc
+                        </span> 
+                        <span>
+                            Trúc Nhân
+                        </span> 
+                        <span>
+                            Huỳnh Nhi
+                        </span> 
+                        <span>
+                            Yến Nhi
+                        </span> 
+                        <span>
+                            Hương Thảo
+                        </span> 
+                        <span>
+                            Thúy Anh
+                        </span> 
+                        <span>
+                            Thúy Hiền
+                        </span> 
+                        <span>
+                            Anh Thư
+                        </span> 
+                        <span>
+                            H.N.Quỳnh Anh
+                        </span> 
+                        <span>
+                            L.Quỳnh Anh
+                        </span> 
+                        <span>
+                            Ngọc Anh
+                        </span> 
+                        <span>
+                            Quang Anh
+                        </span> 
+                        <span>
+                            Thu Phương
+                        </span> 
+                        <span>
+                            Tuấn Anh
+                        </span> 
+                        <span>
+                            Hồng Ân
+                        </span> 
+                        <span>
+                            Đình Hiếu
+                        </span>
+                        <span>
+                            Thanh Ngọc
+                        </span>
+                        <span>
+                            Cao Ngạn
+                        </span>
+                        <span>
+                            Minh Quang
+                        </span>
+                        <span>
+                            Minh Khoa
+                        </span>
+                        <span>
+                            Hoàng Phúc
+                        </span>
+                        <span>
+                            Nhật Minh
+                        </span>
+                        <span>
+                            Anh Đức
+                        </span>
+                        <span>
+                            Hoàng Nam
+                        </span>
+                        <span style="column-span: all;">
+                            Thúy An
+                        </span>
+                        <span>
+                            N.N.Quỳnh Anh
+                        </span>
+                    </div>
+                </div>
+                <div style="font-size: 15px; font-weight: bold; color: rgba(255, 255, 255, 0.541);">
+                    Một dự án cá nhân của Diệp Đình Hiếu. Bản quyền trang web thuộc về Diệp Đình Hiếu<br>
+                    Vui lòng không sao chép hay chỉnh sửa dưới mọi hình thức
+                </div>
+            </div>
+            <div id="72" style="position: absolute; left: 150%; transition: 0.70s; width: 92%; text-align: left; transform: translateX(-50%)">
+                <div style="line-height: 1.15rem; text-align: center;">
+                    <div style="margin-bottom: 0.5%;">
+                        Trong hành trình 3 năm cấp ba của tôi, mọi người ai cũng đều đã cho tôi những khoảnh khắc quý giá, những điều vui, những điều buồn.
+                        Và những thứ ấy tôi chắc sẽ không bao giờ quên được. Nhưng có lẽ tôi sẽ phải cảm ơn nhiều nhất là những người sau đây.
+                    </div>
+                    <div  style="margin-bottom: 0.5%;">
+                        <div style="text-align: center;font-size: 1.25rem; font-weight: bold;">
+                            Cảm ơn <span class="Text-Gradient" style="--left: white; --right: white;"">Cao Ngạn</span>
+                        </div>
+                        Cậu là người bạn có lẽ là đầu tiên của tôi khi mới bước vào trường. Vẫn còn nhớ lúc đó tôi khóc vì nhớ thời cấp 2,
+                        cậu đã là người đến an ủi tôi. Đáng lẽ cả hai sẽ phải nghe đoạn ghi âm ấy nhưng tôi mất mẹ điện thoại rồi... Rồi lên đại học không biết 
+                        có bao giờ tìm được người thứ hai như cậu. Cho tôi sờ đầu, sờ tóc các kiểu và dám lấy điện thoại tôi khi đi tiệc vì tôi nhìn vào nó nhiều quá<br>
+                        Fun fact: Gia đình cậu đã tốn hơn vài triệu chỉ để mời tôi đi ăn
+                    </div>
+                    <div  style="margin-bottom: 0.5%;">
+                        <div style="text-align: center;font-size: 1.25rem; font-weight: bold;">
+                            Cảm ơn <span class="Text-Gradient">Vân Khánh</span>
+                        </div>
+                        Người đầu tiên chụp ảnh dìm tôi (lúc đó tôi nhìn khác mẹ gì thằng homeless không), sao mà quên được, tiếc là mấy cái ảnh đó giờ 
+                        không còn rồi. Có lẽ cậu là người giúp tôi nhiều nhất trong mấy vụ làm việc nhóm, nói thật chứ không có Khánh chắc tôi ngủm mẹ rồi. Cũng cảm ơn những lần 
+                        chia sẻ đồ ăn vặt với tôi và đã là người con gái làm cho tôi cười nhiều nhất trong suốt 3 năm học. Chơi đùa với tôi bằng mấy ảnh con mèo, con chó và mấy cái reels nhìn hài vcl
+                        <br>
+                        Fun fact: Mẹ của Khánh là giáo viên ở cái trường đại học mà tôi sắp vào
+                    </div>
+                    <div  style="margin-bottom: 0.5%;">
+                        <div style="text-align: center;font-size: 1.25rem; font-weight: bold;">
+                            Cảm ơn <span class="Text-Gradient" style="--left: rgb(255, 0, 0); --right: rgb(255, 158, 158);">Quang Anh</span>
+                        </div>
+                        Năm lớp 10 thì hai ta có lẽ chưa thân lắm nhưng tới lớp 11 và 12 thì có lẽ hình như lại thành 2 cục nam châm mất rồi. Cũng chả biết
+                        tình bạn của ta bắt đầu từ khi nào nhưng cậu đã trở thành người quan tâm tôi nhất, một người bạn tốt, một người bạn đồng hành đúng nghĩa cùng tôi đi qua
+                        biết bao nhiêu chuyện, để cho tôi chia sẻ, tâm sự nhiều điều. Đến lúc gần xa nhau rồi cậu vẫn quan tâm đến trường mà tôi nên vào, ngành học của tôi.
+                        Tôi có lẽ phải cảm ơn cậu rất nhiều vì đã làm bạn tôi.<br>
+                        Fun fact: Quang Anh là người bạn thứ 2 đến nhà của tôi trong suốt 3 năm học
+                    </div>
+                    <div  style="margin-bottom: 0.5%;">
+                        <div style="text-align: center;font-size: 1.25rem; font-weight: bold;">
+                            Cảm ơn <span class="Text-Gradient" style="--left: #00e000;--right: rgb(255, 255, 148);">Hoàng Nam</span>
+                        </div>
+                        Đầu năm lúc ngày đầu tiên đến nhận lớp, lúc đó chả ai quen ai cả, Nam đã ngồi kế tôi những ngày đầu. Sau này khi lên lớp 11, thì cậu
+                        cho tôi một công việc hè ở Suối Tiên, cái đó thì không có gì bằng rồi. Sau đó thì cả hai cũng giúp nhau qua, giúp nhau lại. Nam hỏi tôi giúp rất nhiều thứ
+                        chủ yếu là Toán. Những cuộc vui nào của lớp, Nam cũng đều mời tôi tham gia, không nhờ có Nam chắc bây giờ tôi chả quen đứa con trai hay gái ở trong lớp cả, chỉ 
+                        là một đứa hướng nội sống ẩn mình trong lớp học, nghỉ học cũng chả ai để ý
+                    </div>
+                    <div style="margin-bottom: 0.5%;">
+                        <div style="text-align: center;font-size: 1.25rem; font-weight: bold;">
+                            Cảm ơn <span>Anh Đức</span> và <span class="Text-Gradient" style="--left: rgb(119, 216, 255);--right: white;">Tuấn Anh</span>
+                        </div>
+                        Hai chúa hề của lớp, là hai người chiếm nhiều dung lượng bộ nhớ trong điện thoại của tôi. Tuấn Anh thì ảnh dìm vô tư, nhìn ảnh nào 
+                        hài ảnh đó, nhưng liệu một người hay làm trò vui cho mọi người có thật sự là một người <b>Hạnh Phúc</b>?. Còn Anh Đức, vừa hòa đồng vừa hướng ngoại, làm cho mỗi 
+                        ngày đến trường là một ngày vui, vì nó vui thật, có nhiều lúc cũng ấy ấy lắm nhưng không sao, không ai chú ý đâu. Hai người này tôi cũng chả biết tại sao lại có nhiều ảnh dìm đến thế nhưng tôi
+                        biết rõ một điều, ảnh dìm của lớp và tôi đa số là hai người này. Những cuộc vui của lớp mà vắng mặt hai người họ chỉ còn gì là cuộc vui nữa
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="8" style="display: none; opacity: 0;">
+        <div class="Import-Container">
+            <div class="Terminal">
+                <div style="font-weight: bold;">World Terminal</div>
+                <span id="Blink" style="opacity: 1">></span>
+                <input id="Input">
+            </div>
+            <div class="Logs Terminal">
+                Error Code #F2351A: Invalid world key<br>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; bottom: 0.70%; z-index: 10000;" id="PageCounter">
+        <span id="SlideCounter">
+            1
+        </span>
+        <span>
+            /
+        </span>
+        <span id="AvailableSlide">
+            1
+        </span>
+    </div>
+</body>
+<script src="Mousetrap.js" type="text/javascript"></script>
+<script src="index.js" type="text/javascript"></script>
+<script src="Event-Handlers.js" type="text/javascript"></script>
+</html>
